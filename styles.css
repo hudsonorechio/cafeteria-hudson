@@ -60,6 +60,7 @@ header .nav {
     gap: 30px;
     white-space: nowrap;
     background-color: var(--primeira);
+    padding: 20px;
 }
 
 .nav a {
@@ -353,36 +354,36 @@ header .nav {
 }
 
 .caixa-principall5 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
 
-  grid-template-areas:
-    "titulo titulo"
-    "texto imagem";
+    grid-template-areas:
+        "titulo titulo"
+        "texto imagem";
 
-  gap: 40px;
+    gap: 40px;
 
-  padding: 60px;
-  max-width: 1100px;
-  margin: 0 auto;
+    padding: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .titulo-caixa15 {
-  grid-area: titulo;
-  font-size: 2.4rem;
+    grid-area: titulo;
+    font-size: 2.4rem;
 }
 
 .caixa-principall5 p {
-  grid-area: texto;
-  line-height: 1.6;
+    grid-area: texto;
+    line-height: 1.6;
 }
 
 .caixa-principall5 img {
-  grid-area: imagem;
-  width: 100%;
-  max-width: 450px;
-  justify-self: end;
+    grid-area: imagem;
+    width: 100%;
+    max-width: 450px;
+    justify-self: end;
 }
 
 .footer {
@@ -390,7 +391,8 @@ header .nav {
     justify-content: center;
     gap: 60px;
     padding: 30px 0;
-    background-color: #6b2f14; /* marrom do café */
+    background-color: #6b2f14;
+    /* marrom do café */
 }
 
 .footer-texto {
@@ -402,9 +404,11 @@ header .nav {
 
 .footer-social {
     display: flex;
-    flex-direction: row; /* um embaixo do outro */
+    flex-direction: row;
+    /* um embaixo do outro */
     align-items: center;
-    gap: 10px; /* espaço pequeno */
+    gap: 10px;
+    /* espaço pequeno */
 }
 
 .footer-social .titulo-social {
@@ -420,3 +424,68 @@ header .nav {
 .footer-texto p {
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+
+  /* NAV */
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  .nav img {
+    width: 120px;
+    height: auto;
+  }
+
+  /* HERO */
+  .hero-imagem {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 70vh;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* TEXTOS HERO */
+  .hero-imagem h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-imagem h2 {
+    font-size: 1.2rem;
+  }
+
+  /* ARTICLES / SECTIONS */
+  article {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  article img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  .caixa-principall5 img {
+    width: 100%;
+    max-width: 100%;
+    justify-self: center;
+    margin: 0 auto;
+    display: block;
+  }
+
+
+
+
+
+
+}
+
+
+
+
