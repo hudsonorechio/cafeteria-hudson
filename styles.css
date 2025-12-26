@@ -41,7 +41,7 @@ a {
 h1,
 h2,
 h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 
@@ -55,11 +55,11 @@ header {
 
 header .nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: end;
+    justify-content: end;
     gap: 30px;
+    white-space: nowrap;
     background-color: var(--primeira);
-    padding: 15px 30px;
 }
 
 .nav a {
@@ -67,6 +67,7 @@ header .nav {
     font-weight: 600;
     color: var(--segunda);
     font-family: 'Poppins', sans-serif;
+
 }
 
 .nav a:hover {
@@ -76,13 +77,6 @@ header .nav {
 .nav a.semsublinhado {
     text-decoration: none;
 }
-
-.logo img {
-    width: 200px;
-    max-width: 100%;
-    height: auto;
-}
-
 
 /*----------------------------------------------------------------*/
 
@@ -425,62 +419,4 @@ header .nav {
 
 .footer-texto p {
     font-weight: bold;
-}
-
-/* =========================
-   RESPONSIVO - CELULAR
-========================= */
-@media (max-width: 450px) {
-
-  body {
-    overflow-x: hidden;
-  }
-
-  section {
-    padding: 20px;
-  }
-
-  h1, h2 {
-    text-align: center;
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 1rem;
-    line-height: 1.6;
-    text-align: center;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* Caixa principal (quem somos) */
-  .caixa-principall5 {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .caixa-principall5 img {
-    margin-top: 20px;
-  }
-
-  /* Footer */
-  footer {
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-  }
-
-  .footer-social {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-}
-
-.article{
-    flex-direction: column;
 }
