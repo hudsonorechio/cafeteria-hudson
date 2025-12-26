@@ -402,7 +402,7 @@ header .nav {
 
 .footer-social {
     display: flex;
-    flex-direction: column; /* um embaixo do outro */
+    flex-direction: row; /* um embaixo do outro */
     align-items: center;
     gap: 10px; /* espaço pequeno */
 }
